@@ -1,5 +1,5 @@
 .main {
-  max-width: 120rem;
+  max-width: 108rem;
   margin: auto;
   margin-top: 2rem;
   display: flex;
@@ -9,11 +9,11 @@
   .logo {
     text-decoration: none;
     color: #1a191e;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.9163rem + 0.3153vw, 1.2rem);
     font-weight: 700;
 
     span {
-      font-size: 60px;
+      font-size: clamp(2rem, 1.8325rem + 0.6305vw, 2.4rem);
       line-height: 0;
       color: #e74a86;
     }
@@ -21,7 +21,7 @@
 }
 
 .header {
-  z-index: 1;
+  z-index: 2;
   right: 10px;
   position: fixed;
 

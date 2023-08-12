@@ -5,12 +5,21 @@
   font-size: 12px;
   gap: 40px;
 
-  a {
+  .icon {
     color: white;
     transition: all 0.2s;
 
     &:hover {
       color: #e74a86;
     }
+  }
+}
+
+.linkedin {
+  fill: white;
+
+  &:hover {
+    color: #e74a86;
+    fill: #e74a86;
   }
 }

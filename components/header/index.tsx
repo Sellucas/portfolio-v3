@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
@@ -12,6 +13,9 @@ const Home = () => {
   return (
     <>
       <div className={styles.main}>
+        <Link className={styles.logo} href={"/"}>
+          SELLUCAS<span>.</span>
+        </Link>
 
         <div className={styles.header}>
           <div onClick={() => { setIsActive(!isActive) }} className={styles.button}>

@@ -1,18 +1,44 @@
+.main {
+  max-width: 120rem;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    text-decoration: none;
+    color: #1a191e;
+    font-size: 24px;
+    font-weight: 700;
+
+    span {
+      font-size: 60px;
+      line-height: 0;
+      color: #e74a86;
+    }
+  }
+}
+
 .header {
-  padding: 30px;
-  position: fixed;
-  right: 0;
   z-index: 1;
+  right: 10px;
+  position: fixed;
 
   .button {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: #e74a86;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   .burger {

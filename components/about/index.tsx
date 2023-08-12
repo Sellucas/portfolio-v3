@@ -9,6 +9,7 @@ import Container from '@/components/ui/container'
 
 import styles from './style.module.scss'
 import Link from 'next/link';
+import Magnetic from '../ui/magnetic';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -32,20 +33,22 @@ const About = () => {
 
             <div className={styles.buttons}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
-                <Link href={"/"}>
-                  <ReactCurvedText width={300}
-                    height={300}
-                    cx={150}
-                    cy={150}
-                    rx={100}
-                    ry={100}
-                    startOffset={50}
-                    reversed={true}
-                    text='Vamos conversar • Vamos conversar • Vamos conversar •'
-                    textProps={{ "style": { "fontSize": 24 } }}
-                  />
-                  <PlayCircle size={200} absoluteStrokeWidth className={styles.playicon} />
-                </Link>
+                <Magnetic>
+                  <Link href={"/"}>
+                    <ReactCurvedText width={300}
+                      height={300}
+                      cx={150}
+                      cy={150}
+                      rx={100}
+                      ry={100}
+                      startOffset={50}
+                      reversed={true}
+                      text='Vamos conversar • Vamos conversar • Vamos conversar •'
+                      textProps={{ "style": { "fontSize": 24 } }}
+                    />
+                    <PlayCircle size={200} absoluteStrokeWidth className={styles.playicon} />
+                  </Link>
+                </Magnetic>
               </motion.div>
             </div>
           </div>

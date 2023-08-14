@@ -164,6 +164,10 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+
   .blue {
     width: 350px;
     height: 250px;

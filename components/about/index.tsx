@@ -59,7 +59,7 @@ const About = () => {
                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
                   <Link href={"/"}>
                     <div>
-                      <span>Vamos Conversar <Send color='#f0ce30' size={35} /></span>
+                      <span>Vamos Conversar <Send color='#f0ce30' size={35} absoluteStrokeWidth/></span>
                     </div>
                   </Link>
                 </motion.div>

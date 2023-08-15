@@ -37,7 +37,7 @@ const About = () => {
               <Marquee
                 autoFill
                 gradient
-                gradientWidth={200}
+                gradientWidth={50}
               >
                 <span>
                   <Image src={"/nextjs.svg"} alt='Next.js' width={80} height={80} />

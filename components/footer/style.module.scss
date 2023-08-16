@@ -23,6 +23,7 @@ $dot-space: 100px;
     linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
     $dot-color;
   background-size: $dot-space $dot-space;
+  background-attachment: fixed;
 }
 
 .marquee {

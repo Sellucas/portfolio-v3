@@ -31,7 +31,6 @@ const Hero = () => {
   return (
     <div className={styles.main}>
       <Container>
-
         <Link className={styles.logo} href={"/"}>
           SELLUCAS<span>.</span>
         </Link>
@@ -48,7 +47,7 @@ const Hero = () => {
 
             <div className={styles.buttons}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
-                <button>Vamos Conversar <span><Send size={25} /></span></button>
+                <button className={styles.talk}>Vamos Conversar <span><Send size={25} /></span></button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
                 <button className={styles.document}>Currículo <span><Download /></span></button>
@@ -57,7 +56,7 @@ const Hero = () => {
           </div>
 
           <div className={styles.img}>
-            <Image src={"/cartoon-dog.png"} alt='' fill />
+            <Image src={"/cartoon-dog-removebg.png"} alt='' fill />
           </div>
         </div>
         <div>

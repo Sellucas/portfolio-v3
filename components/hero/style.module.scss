@@ -1,6 +1,15 @@
 .main {
   width: 100%;
   min-height: 100vh;
+  opacity: 1;
+  background-image: radial-gradient(
+      #1a191e 0.7000000000000001px,
+      transparent 0.7000000000000001px
+    ),
+    radial-gradient(#1a191e 0.7000000000000001px, #ffffff 0.7000000000000001px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+  background-attachment: fixed;
 
   .logo {
     text-decoration: none;
@@ -82,6 +91,10 @@
     gap: 2rem;
     align-items: center;
     margin: 4rem 0;
+
+    .talk {
+      box-shadow: 3px 2px 59px -20px rgba(26, 25, 30, 1);
+    }
 
     button {
       display: flex;

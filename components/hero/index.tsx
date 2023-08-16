@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
 
           <div className={styles.img}>
-            <Image src={"/cartoon-dog-removebg.png"} alt='' fill />
+            <Image src={"/cartoon-dog-removebg.png"} alt='Cartoon Dog' fill />
           </div>
         </div>
         <div>

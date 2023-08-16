@@ -18,7 +18,7 @@ const font = Satisfy({
 
 const About = () => {
   return (
-    <div className={styles.main}>
+    <section className={styles.main}>
       <Container>
         <div className={styles.grid}>
           <div className={styles.description}>
@@ -38,6 +38,7 @@ const About = () => {
                 autoFill
                 gradient
                 gradientWidth={50}
+                aria-label="Tecnologias"
               >
                 <span>
                   <Image src={"/nextjs.svg"} alt='Next.js' width={80} height={80} />
@@ -90,7 +91,7 @@ const About = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   )
 }
 

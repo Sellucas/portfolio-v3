@@ -39,10 +39,6 @@ const Home = () => {
   return (
     <>
       <div className={styles.main}>
-        <Link className={styles.logo} href={"/"}>
-          SELLUCAS<span>.</span>
-        </Link>
-
         {isVisible &&
           <motion.div
             whileHover={{ scale: 1.1 }}

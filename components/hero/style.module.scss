@@ -1,6 +1,19 @@
 .main {
   width: 100%;
   min-height: 100vh;
+
+  .logo {
+    text-decoration: none;
+    color: #1a191e;
+    font-size: clamp(1rem, 0.9163rem + 0.3153vw, 1.2rem);
+    font-weight: 700;
+
+    span {
+      font-size: clamp(2rem, 1.8325rem + 0.6305vw, 2.4rem);
+      line-height: 0;
+      color: #e74a86;
+    }
+  }
 }
 
 .grid {

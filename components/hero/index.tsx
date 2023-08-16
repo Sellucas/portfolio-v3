@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import Container from '@/components/ui/container';
 
 import styles from './style.module.scss'
+import Link from 'next/link';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -30,6 +31,11 @@ const Hero = () => {
   return (
     <div className={styles.main}>
       <Container>
+
+        <Link className={styles.logo} href={"/"}>
+          SELLUCAS<span>.</span>
+        </Link>
+
         <div className={styles.grid}>
           <div className={styles.description}>
             <h2 className={font.className}>Olá!</h2>

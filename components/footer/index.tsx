@@ -12,22 +12,24 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.pattern} />
-      <div className={styles.banner} />
-      <div className={styles.banner2} />
-      <div className={styles.marquee}>
-        <Marquee
-          autoFill
-          gradient
-          gradientWidth={50}
-          gradientColor={[231, 74, 134]}
-        >
-          <span>Entre em Contato </span>
-          <span><Send color={"#F0CE30"} /></span>
-          <span>Vamos Conversar</span>
-          <span><Send color={"#F0CE30"} /></span>
-        </Marquee>
-      </div>
+      <>
+        <div className={styles.pattern} />
+        <div className={styles.banner} />
+        <div className={styles.banner2} />
+        <div className={styles.marquee}>
+          <Marquee
+            autoFill
+            gradient
+            gradientWidth={50}
+            gradientColor={[231, 74, 134]}
+          >
+            <span>Entre em Contato </span>
+            <span><Send color={"#F0CE30"} /></span>
+            <span>Vamos Conversar</span>
+            <span><Send color={"#F0CE30"} /></span>
+          </Marquee>
+        </div>
+      </>
 
       <Container>
         <div className={styles.container}>
@@ -40,7 +42,7 @@ const Footer = () => {
             </h1>
 
             <Magnetic>
-              <Link className={styles.hireme} href={"/"}>Contratar <ArrowRightCircle size={60} strokeWidth={1}/></Link>
+              <Link className={styles.hireme} href={"/"}>Contratar <ArrowRightCircle size={60} strokeWidth={1} /></Link>
             </Magnetic>
           </div>
         </div>

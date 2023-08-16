@@ -1,1 +1,3 @@
-
+.scroller {
+  height: min-content;
+}

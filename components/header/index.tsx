@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
@@ -57,7 +56,11 @@ const Home = () => {
 
       </div >
       <AnimatePresence mode="wait">
-        {isActive && <Nav />}
+        {isActive &&
+          <>
+            <div className={styles.blur}/>
+            <Nav />
+          </>}
       </AnimatePresence>
     </>
   )

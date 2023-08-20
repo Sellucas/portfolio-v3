@@ -9,3 +9,6 @@ body {
   overscroll-behavior: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}

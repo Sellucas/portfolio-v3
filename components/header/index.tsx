@@ -14,6 +14,7 @@ const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   const controls = useAnimation();
 
+  // Show header after scroll
   useEffect(() => {
     function handleScroll() {
       if (window.scrollY >= window.innerHeight) {
@@ -29,11 +30,21 @@ const Home = () => {
     };
   }, []);
 
+  // Header input animation
   useEffect(() => {
     if (isVisible) {
       controls.start({ opacity: 1, y: 0 });
     }
   }, [isVisible, controls]);
+
+  // Disable global scroll
+  useEffect(() => {
+    if (isActive) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [isActive]);
 
   return (
     <>
@@ -58,7 +69,7 @@ const Home = () => {
       <AnimatePresence mode="wait">
         {isActive &&
           <>
-            <div className={styles.blur}/>
+            <div className={styles.blur} />
             <Nav />
           </>}
       </AnimatePresence>

@@ -1,7 +1,7 @@
 "use client"
 
 import { Satisfy } from 'next/font/google'
-import { Send } from 'lucide-react'
+import { PlayCircle, Send } from 'lucide-react'
 import Marquee from "react-fast-marquee";
 import Image from 'next/image'
 import { motion } from "framer-motion";
@@ -10,6 +10,8 @@ import Container from '@/components/ui/container'
 
 import styles from './style.module.scss'
 import Link from 'next/link';
+import Magnetic from '../ui/magnetic';
+import ReactCurvedText from 'react-curved-text';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -55,7 +57,7 @@ const About = () => {
               </Marquee>
             </div>
 
-            <div className={styles.hireMe}>
+            {/* <div className={styles.hireMe}>
               <div className={styles.blue}>
                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
                   <Link href={"/"}>
@@ -65,6 +67,26 @@ const About = () => {
                   </Link>
                 </motion.div>
               </div>
+            </div> */}
+            <div className={styles.buttons}>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
+                <Magnetic>
+                  <Link href={"/"}>
+                    <ReactCurvedText width={300}
+                      height={300}
+                      cx={150}
+                      cy={150}
+                      rx={100}
+                      ry={100}
+                      startOffset={50}
+                      reversed={true}
+                      text='Vamos conversar • Vamos conversar • Vamos conversar •'
+                      textProps={{ "style": { "fontSize": 24 } }}
+                    />
+                    <PlayCircle size={200} absoluteStrokeWidth className={styles.playicon} />
+                  </Link>
+                </Magnetic>
+              </motion.div>
             </div>
           </div>
 

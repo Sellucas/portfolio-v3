@@ -9,6 +9,10 @@ body {
   overscroll-behavior: none;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .no-scroll {
   overflow: hidden;
 }

@@ -12,7 +12,7 @@ import Link from 'next/link';
 import Magnetic from '../ui/magnetic';
 
 const font = Satisfy({
-  subsets: ['latin'],
+  subsets: ['latin'], 
   weight: '400'
 })
 

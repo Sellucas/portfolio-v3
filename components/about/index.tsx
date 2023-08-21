@@ -13,6 +13,7 @@ import Container from '@/components/ui/container'
 
 import styles from './style.module.scss'
 import Magnetic from '../ui/magnetic';
+import Heading from '../ui/heading';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -25,14 +26,12 @@ const About = () => {
       <Container>
         <div className={styles.grid}>
           <div className={styles.description}>
-            <div>
-              <h2 className={font.className}>Experiência</h2>
-              <h1>
-                Habilidades & <br />
-                Tecnologias <br />
-              </h1>
-              <p>Especializado em desenvolvimento web, porém estou sempre aberto a trabalhar com outras tecnologias.</p>
-            </div>
+            <Heading
+              head={'Experiência'}
+              title1={"Habilidades &"}
+              title2={"Tecnologias"}
+              description={"Especializado em desenvolvimento web, porém estou sempre aberto a trabalhar com outras tecnologias."}
+            />
 
             <div className={styles.stack}>
               <h3>Tecnologias</h3>

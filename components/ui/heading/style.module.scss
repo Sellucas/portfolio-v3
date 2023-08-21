@@ -1,0 +1,37 @@
+@import "@/styles/variables";
+
+.heading {
+  h2 {
+    color: $pink;
+    line-height: 0;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: clamp(3rem, 2.1626rem + 3.1527vw, 5rem);
+
+    span {
+      color: $blue;
+    }
+  }
+
+  p {
+    margin-top: 40px;
+    max-width: 30rem;
+    position: relative;
+    margin-left: 35px;
+    font-size: clamp(1rem, 0.7906rem + 0.7882vw, 1.5rem);
+    color: $gray;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: $black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -30px;
+    }
+  }
+}

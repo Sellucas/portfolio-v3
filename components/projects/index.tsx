@@ -12,6 +12,7 @@ import Container from '@/components/ui/container'
 import Magnetic from '@/components/ui/magnetic';
 
 import styles from './style.module.scss'
+import Heading from '../ui/heading';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -24,13 +25,12 @@ const Projects = () => {
       <Container>
         <div className={styles.content}>
           <div className={styles.description}>
-            <div>
-              <h2 className={font.className}>Projetos</h2>
-              <h1>
-                Últimos <br />
-                Projetos
-              </h1>
-            </div>
+            <Heading
+              head={"Projetos"}
+              title1={"Últimos"}
+              title2={"Projetos"}
+              description={"Projetos recentemente finalizados que merecem ser destacados."}
+            />
 
             <div className={styles.buttons}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >

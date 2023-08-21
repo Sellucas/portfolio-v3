@@ -11,6 +11,7 @@ import Container from '@/components/ui/container'
 import Magnetic from '@/components/ui/magnetic';
 
 import styles from './style.module.scss'
+import Heading from '../ui/heading';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -23,14 +24,12 @@ const Service = () => {
       <Container>
         <div className={styles.grid}>
           <div className={styles.description}>
-            <div>
-              <h2 className={font.className}>Serviços</h2>
-              <h1>
-                Serviços que <br />
-                Ofereço <br />
-              </h1>
-              <p>Ajudo empresas ambiciosas a gerar mais lucros, criando aplicativos web escaláveis, amigáveis ​​ao usuário e seguros.</p>
-            </div>
+            <Heading
+              head={'Serviços'}
+              title1={"Serviços que"}
+              title2={"Ofereço"}
+              description={"Ajudo empresas ambiciosas a gerar mais lucros, criando aplicativos web escaláveis, amigáveis ​​ao usuário e seguros."}
+            />
 
             <div className={styles.buttons}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >

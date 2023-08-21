@@ -35,7 +35,7 @@ const Projects = () => {
             <div className={styles.buttons}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
                 <Magnetic>
-                  <Link href={"/"}>
+                  <Link href={"https://wa.me/5548998600628"} target='_blank'>
                     <ReactCurvedText width={300}
                       height={300}
                       cx={150}
@@ -63,7 +63,7 @@ const Projects = () => {
                     <h2>E-commerce &  <br />
                       Dashboard - Deo Store
                     </h2>
-                    <Link href={'/'}>
+                    <Link href={'https://lnkd.in/dNQhRfJc'} target='_blank'>
                       <MoveUpRight size={35} color='white' />
                     </Link>
                   </div>
@@ -80,14 +80,14 @@ const Projects = () => {
                 <div className={styles.project2}>
                   <div className={styles.separator} />
                   <div className={styles.header}>
-                    <h2>E-commerce &  <br />
-                      Dashboard - Deo Store
+                    <h2>CardFlex  <br />
+                      Cartões Físicos e Virtuais
                     </h2>
-                    <Link href={'/'}>
+                    <Link href={'https://lnkd.in/dr6N2AZc'} target='_blank'>
                       <MoveUpRight size={35} color='white' />
                     </Link>
                   </div>
-                  <p>Fullstack - Web app</p>
+                  <p>Front-end</p>
                   <div className={styles.projectFeatured}>
                     <Image src={"/empty.jpg"} alt='' fill />
                   </div>
@@ -100,8 +100,8 @@ const Projects = () => {
                 <div className={styles.project3}>
                   <div className={styles.separator} />
                   <div className={styles.header}>
-                    <h2>E-commerce &  <br />
-                      Dashboard - Deo Store
+                    <h2>CluedUp  <br />
+                      Controle Sua Jornada
                     </h2>
                     <Link href={'/'}>
                       <MoveUpRight size={35} color='white' />

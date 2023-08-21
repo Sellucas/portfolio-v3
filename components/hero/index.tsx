@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { Satisfy } from 'next/font/google'
 import { Send, Download, Mouse, ChevronsDown } from 'lucide-react'
 import { motion } from "framer-motion";
+import { Bounce } from 'react-awesome-reveal';
+import Link from 'next/link';
 
 import Container from '@/components/ui/container';
 
 import styles from './style.module.scss'
-import Link from 'next/link';
-import { Bounce } from 'react-awesome-reveal';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -49,12 +49,16 @@ const Hero = () => {
             <div className={styles.buttons}>
               <Bounce>
                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
-                  <button className={styles.talk}>Vamos Conversar <span><Send size={25} /></span></button>
+                  <Link href={"https://wa.me/5548998600628"} target='_blank' className={styles.talk}>
+                    Vamos Conversar <span><Send size={25} /></span>
+                  </Link>
                 </motion.div>
               </Bounce>
               <Bounce delay={500}>
                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
-                  <button className={styles.document}>Currículo <span><Download /></span></button>
+                  <Link href={"/"} target='_blank' className={styles.document}>
+                    Currículo <span><Download /></span>
+                  </Link>
                 </motion.div>
               </Bounce>
             </div>

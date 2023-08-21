@@ -46,7 +46,9 @@ const Footer = () => {
 
             <Bounce>
               <Magnetic>
-                <Link className={styles.hireme} href={"/"}>Contratar <ArrowRightCircle size={60} strokeWidth={1} /></Link>
+                <Link className={styles.hireme} href={"https://wa.me/5548998600628"} target='_blank'>
+                  Contratar <ArrowRightCircle size={60} strokeWidth={1} />
+                </Link>
               </Magnetic>
             </Bounce>
           </div>
@@ -54,14 +56,14 @@ const Footer = () => {
       </Container>
 
       <footer className={styles.footer}>
-        <Link href={"/"}>LinkedIn</Link>
-        <Link href={"/"}>Github</Link>
+        <Link href={"https://www.linkedin.com/in/lucas-sell-machado/"} target='_blank'>LinkedIn</Link>
+        <Link href={"https://github.com/Sellucas"}>Github</Link>
 
         <Link className={styles.logo} href={"/"}>
           SELLUCAS<span>.</span>
         </Link>
 
-        <Link href={"/"}>Email</Link>
+        <Link href={"mailto:lucassellmachado@gmail.com"}>Email</Link>
         <Link href={"/"}>Currículo</Link>
       </footer>
     </div>

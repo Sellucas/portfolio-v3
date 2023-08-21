@@ -54,53 +54,59 @@ const Projects = () => {
           </div>
 
           <div className={styles.project}>
-            <div>
-              <div className={styles.separator} />
-              <div className={styles.header}>
-                <h2>E-commerce &  <br />
-                  Dashboard - Deo Store
-                </h2>
-                <Link href={'/'}>
-                  <MoveUpRight size={35} color='white' />
-                </Link>
+            <motion.div whileHover={{ scale: 1.1 }} >
+              <div>
+                <div className={styles.separator} />
+                <div className={styles.header}>
+                  <h2>E-commerce &  <br />
+                    Dashboard - Deo Store
+                  </h2>
+                  <Link href={'/'}>
+                    <MoveUpRight size={35} color='white' />
+                  </Link>
+                </div>
+                <p>Fullstack - Web app</p>
+                <div className={styles.projectFeatured}>
+                  <Image src={"/empty.jpg"} alt='' fill />
+                </div>
               </div>
-              <p>Fullstack - Web app</p>
-              <div className={styles.projectFeatured}>
-                <Image src={"/empty.jpg"} alt='' fill />
-              </div>
-            </div>
+            </motion.div>
 
-            <div className={styles.project2}>
-              <div className={styles.separator} />
-              <div className={styles.header}>
-                <h2>E-commerce &  <br />
-                  Dashboard - Deo Store
-                </h2>
-                <Link href={'/'}>
-                  <MoveUpRight size={35} color='white' />
-                </Link>
+            <motion.div whileHover={{ scale: 1.1 }} >
+              <div className={styles.project2}>
+                <div className={styles.separator} />
+                <div className={styles.header}>
+                  <h2>E-commerce &  <br />
+                    Dashboard - Deo Store
+                  </h2>
+                  <Link href={'/'}>
+                    <MoveUpRight size={35} color='white' />
+                  </Link>
+                </div>
+                <p>Fullstack - Web app</p>
+                <div className={styles.projectFeatured}>
+                  <Image src={"/empty.jpg"} alt='' fill />
+                </div>
               </div>
-              <p>Fullstack - Web app</p>
-              <div className={styles.projectFeatured}>
-                <Image src={"/empty.jpg"} alt='' fill />
-              </div>
-            </div>
+            </motion.div>
 
-            <div className={styles.project3}>
-              <div className={styles.separator} />
-              <div className={styles.header}>
-                <h2>E-commerce &  <br />
-                  Dashboard - Deo Store
-                </h2>
-                <Link href={'/'}>
-                  <MoveUpRight size={35} color='white' />
-                </Link>
+            <motion.div whileHover={{ scale: 1.1 }} >
+              <div className={styles.project3}>
+                <div className={styles.separator} />
+                <div className={styles.header}>
+                  <h2>E-commerce &  <br />
+                    Dashboard - Deo Store
+                  </h2>
+                  <Link href={'/'}>
+                    <MoveUpRight size={35} color='white' />
+                  </Link>
+                </div>
+                <p>Fullstack - Web app</p>
+                <div className={styles.projectFeatured}>
+                  <Image src={"/empty.jpg"} alt='' fill />
+                </div>
               </div>
-              <p>Fullstack - Web app</p>
-              <div className={styles.projectFeatured}>
-                <Image src={"/empty.jpg"} alt='' fill />
-              </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </Container>

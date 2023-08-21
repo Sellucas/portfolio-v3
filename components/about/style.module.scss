@@ -1,25 +1,15 @@
 .main {
   width: 100%;
   min-height: 100vh;
-  opacity: 1;
-  background-image: radial-gradient(
-      #1a191e 0.7000000000000001px,
-      transparent 0.7000000000000001px
-    ),
-    radial-gradient(#1a191e 0.7000000000000001px, #ffffff 0.7000000000000001px);
-  background-size: 28px 28px;
-  background-position: 0 0, 14px 14px;
-  background-attachment: fixed;
 }
 
 .grid {
-  color: #1a191e;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   margin-top: 5.5rem;
+  color: #1a191e;
 
   @media (max-width: 1023px) {
     margin-top: 3rem;
@@ -167,65 +157,6 @@
 .playicon {
   margin-left: -280px;
 }
-
-// .hireMe {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   @media screen and (max-width: 1023px) {
-//     display: none;
-//   }
-
-//   .blue {
-//     width: 350px;
-//     height: 250px;
-//     border-radius: 500px 500px 0 0;
-//     background-color: #02ddce4a;
-//     position: relative;
-//     margin: 0;
-
-//     a {
-//       width: 250px;
-//       height: 250px;
-//       border-radius: 50%;
-//       background-color: #1a191e;
-//       z-index: 2;
-//       position: absolute;
-//       left: 50%;
-//       transform: translateX(-50%);
-//       top: 20px;
-
-//       div {
-//         width: 200px;
-//         height: 200px;
-//         border-radius: 50%;
-//         border: 1px solid white;
-//         position: absolute;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         top: 20px;
-
-//         span {
-//           width: 100%;
-//           position: absolute;
-//           left: 50%;
-//           transform: translateX(-50%);
-//           top: 70px;
-
-//           color: white;
-//           font-size: 1.3rem;
-//           font-weight: 400;
-//           display: flex;
-//           flex-direction: column;
-//           align-items: center;
-//           justify-content: center;
-//           gap: 1rem;
-//         }
-//       }
-//     }
-//   }
-// }
 
 .buttons {
   display: flex;

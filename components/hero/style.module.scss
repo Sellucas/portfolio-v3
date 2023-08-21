@@ -1,6 +1,7 @@
 .main {
   width: 100%;
   min-height: 100vh;
+  background-attachment: fixed;
   opacity: 1;
   background-image: radial-gradient(
       #1a191e 0.7000000000000001px,
@@ -9,7 +10,6 @@
     radial-gradient(#1a191e 0.7000000000000001px, #ffffff 0.7000000000000001px);
   background-size: 28px 28px;
   background-position: 0 0, 14px 14px;
-  background-attachment: fixed;
 
   .logo {
     text-decoration: none;

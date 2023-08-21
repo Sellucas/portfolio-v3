@@ -58,17 +58,6 @@ const About = () => {
               </Marquee>
             </div>
 
-            {/* <div className={styles.hireMe}>
-              <div className={styles.blue}>
-                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
-                  <Link href={"/"}>
-                    <div>
-                      <span>Vamos Conversar <Send color='$yellow' size={35} absoluteStrokeWidth/></span>
-                    </div>
-                  </Link>
-                </motion.div>
-              </div>
-            </div> */}
             <div className={styles.buttons}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
                 <Magnetic>

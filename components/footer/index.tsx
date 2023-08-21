@@ -24,9 +24,9 @@ const Footer = () => {
             gradientColor={[231, 74, 134]}
           >
             <span>Entre em Contato </span>
-            <span><Send color={"#F0CE30"} /></span>
+            <span><Send color={"#f0ce30"} /></span>
             <span>Vamos Conversar</span>
-            <span><Send color={"#F0CE30"} /></span>
+            <span><Send color={"#f0ce30"} /></span>
           </Marquee>
         </div>
       </>

@@ -1,3 +1,5 @@
+@import "@/styles/variables";
+
 .footer {
   display: flex;
   width: 100%;
@@ -10,7 +12,7 @@
     transition: all 0.2s;
 
     &:hover {
-      color: #e74a86;
+      color: $pink;
     }
   }
 }
@@ -19,7 +21,7 @@
   fill: white;
 
   &:hover {
-    color: #e74a86;
-    fill: #e74a86;
+    color: $pink;
+    fill: $pink;
   }
 }

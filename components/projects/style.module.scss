@@ -1,12 +1,14 @@
+@import "@/styles/variables";
+
 .main {
   width: 100%;
   min-height: 100vh;
-  background-color: #f0ce30;
+  background-color: $yellow;
   padding: 2rem 0 10rem 0;
 }
 
 .description {
-  color: #1a191e;
+  color: $black;
 
   display: flex;
   flex-direction: row;
@@ -18,7 +20,7 @@
   }
 
   h2 {
-    color: #e74a86;
+    color: $pink;
     line-height: 1;
     font-size: 2rem;
   }
@@ -27,7 +29,7 @@
     font-size: clamp(3rem, 2.1626rem + 3.1527vw, 5rem);
 
     span {
-      color: #02ddce;
+      color: $blue;
     }
   }
 
@@ -37,14 +39,14 @@
     position: relative;
     margin-left: 35px;
     font-size: clamp(1rem, 0.7906rem + 0.7882vw, 1.5rem);
-    color: #404040;
+    color: $gray;
 
     &::before {
       content: "";
       display: block;
       height: 2px;
       width: 20px;
-      background-color: #1a191e;
+      background-color: $black;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -68,7 +70,7 @@
       justify-content: space-between;
       align-items: center;
 
-      background-color: #e74a86;
+      background-color: $pink;
       border: none;
       border-radius: 20px;
       color: white;
@@ -84,7 +86,7 @@
 
       &.document {
         background-color: transparent;
-        color: #1a191e;
+        color: $black;
       }
     }
   }
@@ -93,7 +95,7 @@
 .separator {
   width: 100%;
   height: 3px;
-  background-color: #1a191e;
+  background-color: $black;
   margin-bottom: 2rem;
 }
 
@@ -117,7 +119,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #02ddce;
+    background-color: $blue;
 
     display: flex;
     justify-content: center;
@@ -125,7 +127,7 @@
     transition: all 0.2s;
 
     &:hover {
-      background-color: #e74a86;
+      background-color: $pink;
     }
   }
 }
@@ -167,7 +169,7 @@
   align-items: center;
   justify-items: center;
   flex-direction: column;
-  color: #404040;
+  color: $gray;
 }
 
 .buttons {
@@ -179,12 +181,12 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    color: #1a191e;
+    color: $black;
     transition: all 0.2s;
 
     &:hover {
-      color: #e74a86;
-      fill: #e74a86;
+      color: $pink;
+      fill: $pink;
     }
   }
 
@@ -194,7 +196,7 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: #e74a86;
+    background-color: $pink;
     border: none;
     border-radius: 20px;
     color: white;
@@ -210,7 +212,7 @@
 
     &.document {
       background-color: transparent;
-      color: #1a191e;
+      color: $black;
     }
   }
 }

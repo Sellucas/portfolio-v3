@@ -61,7 +61,7 @@ const About = () => {
             <div className={styles.buttons}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
                 <Magnetic>
-                  <Link href={"/"}>
+                  <Link href={"https://wa.me/5548998600628"} target='_blank'>
                     <ReactCurvedText width={300}
                       height={300}
                       cx={150}

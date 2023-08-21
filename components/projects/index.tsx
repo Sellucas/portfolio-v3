@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from "next/link";
 import { MoveUpRight, UserCircle2 } from "lucide-react";
 import ReactCurvedText from 'react-curved-text';
+import { Zoom } from "react-awesome-reveal";
 
 import Container from '@/components/ui/container'
 import Magnetic from '@/components/ui/magnetic';
@@ -19,7 +20,7 @@ const font = Satisfy({
 
 const Projects = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id='projetos'>
       <Container>
         <div className={styles.content}>
           <div className={styles.description}>
@@ -54,59 +55,65 @@ const Projects = () => {
           </div>
 
           <div className={styles.project}>
-            <motion.div whileHover={{ scale: 1.1 }} >
-              <div>
-                <div className={styles.separator} />
-                <div className={styles.header}>
-                  <h2>E-commerce &  <br />
-                    Dashboard - Deo Store
-                  </h2>
-                  <Link href={'/'}>
-                    <MoveUpRight size={35} color='white' />
-                  </Link>
+            <Zoom>
+              <motion.div whileHover={{ scale: 1.1 }} >
+                <div>
+                  <div className={styles.separator} />
+                  <div className={styles.header}>
+                    <h2>E-commerce &  <br />
+                      Dashboard - Deo Store
+                    </h2>
+                    <Link href={'/'}>
+                      <MoveUpRight size={35} color='white' />
+                    </Link>
+                  </div>
+                  <p>Fullstack - Web app</p>
+                  <div className={styles.projectFeatured}>
+                    <Image src={"/empty.jpg"} alt='' fill />
+                  </div>
                 </div>
-                <p>Fullstack - Web app</p>
-                <div className={styles.projectFeatured}>
-                  <Image src={"/empty.jpg"} alt='' fill />
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Zoom>
 
-            <motion.div whileHover={{ scale: 1.1 }} >
-              <div className={styles.project2}>
-                <div className={styles.separator} />
-                <div className={styles.header}>
-                  <h2>E-commerce &  <br />
-                    Dashboard - Deo Store
-                  </h2>
-                  <Link href={'/'}>
-                    <MoveUpRight size={35} color='white' />
-                  </Link>
+            <Zoom delay={250}>
+              <motion.div whileHover={{ scale: 1.1 }} >
+                <div className={styles.project2}>
+                  <div className={styles.separator} />
+                  <div className={styles.header}>
+                    <h2>E-commerce &  <br />
+                      Dashboard - Deo Store
+                    </h2>
+                    <Link href={'/'}>
+                      <MoveUpRight size={35} color='white' />
+                    </Link>
+                  </div>
+                  <p>Fullstack - Web app</p>
+                  <div className={styles.projectFeatured}>
+                    <Image src={"/empty.jpg"} alt='' fill />
+                  </div>
                 </div>
-                <p>Fullstack - Web app</p>
-                <div className={styles.projectFeatured}>
-                  <Image src={"/empty.jpg"} alt='' fill />
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Zoom>
 
-            <motion.div whileHover={{ scale: 1.1 }} >
-              <div className={styles.project3}>
-                <div className={styles.separator} />
-                <div className={styles.header}>
-                  <h2>E-commerce &  <br />
-                    Dashboard - Deo Store
-                  </h2>
-                  <Link href={'/'}>
-                    <MoveUpRight size={35} color='white' />
-                  </Link>
+            <Zoom delay={500}>
+              <motion.div whileHover={{ scale: 1.1 }} >
+                <div className={styles.project3}>
+                  <div className={styles.separator} />
+                  <div className={styles.header}>
+                    <h2>E-commerce &  <br />
+                      Dashboard - Deo Store
+                    </h2>
+                    <Link href={'/'}>
+                      <MoveUpRight size={35} color='white' />
+                    </Link>
+                  </div>
+                  <p>Fullstack - Web app</p>
+                  <div className={styles.projectFeatured}>
+                    <Image src={"/empty.jpg"} alt='' fill />
+                  </div>
                 </div>
-                <p>Fullstack - Web app</p>
-                <div className={styles.projectFeatured}>
-                  <Image src={"/empty.jpg"} alt='' fill />
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Zoom>
           </div>
         </div>
       </Container>

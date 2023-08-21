@@ -2,17 +2,18 @@
 
 import { Satisfy } from 'next/font/google'
 import { MoveUpRight, PlayCircle } from 'lucide-react'
+import Link from 'next/link';
 import ReactCurvedText from 'react-curved-text'
 import { motion } from "framer-motion";
+import { Zoom } from "react-awesome-reveal";
 
 import Container from '@/components/ui/container'
+import Magnetic from '@/components/ui/magnetic';
 
 import styles from './style.module.scss'
-import Link from 'next/link';
-import Magnetic from '../ui/magnetic';
 
 const font = Satisfy({
-  subsets: ['latin'], 
+  subsets: ['latin'],
   weight: '400'
 })
 
@@ -54,56 +55,62 @@ const Service = () => {
           </div>
 
           <div className={styles.services}>
-            <div>
-              <div className={styles.separator} />
-              <div className={styles.header}>
-                <p>01.</p>
-                <h2>Codificação de <br />
-                  Design
-                </h2>
-              </div>
+            <Zoom>
+              <div>
+                <div className={styles.separator} />
+                <div className={styles.header}>
+                  <p>01.</p>
+                  <h2>Codificação de <br />
+                    Design
+                  </h2>
+                </div>
 
-              <div className={styles.servicesLink}>
-                <p>Explore</p>
-                <Link href={'/'}>
-                  <MoveUpRight size={35} color='white' />
-                </Link>
+                <div className={styles.servicesLink}>
+                  <p>Explore</p>
+                  <Link href={'/'}>
+                    <MoveUpRight size={35} color='white' />
+                  </Link>
+                </div>
               </div>
-            </div>
+            </Zoom>
 
-            <div>
-              <div className={styles.separator} />
-              <div className={styles.header}>
-                <p>02.</p>
-                <h2>Aplicações <br />
-                  Web
-                </h2>
-              </div>
+            <Zoom delay={250}>
+              <div>
+                <div className={styles.separator} />
+                <div className={styles.header}>
+                  <p>02.</p>
+                  <h2>Aplicações <br />
+                    Web
+                  </h2>
+                </div>
 
-              <div className={styles.servicesLink}>
-                <p>Explore</p>
-                <Link href={'/'}>
-                  <MoveUpRight size={35} color='white' />
-                </Link>
+                <div className={styles.servicesLink}>
+                  <p>Explore</p>
+                  <Link href={'/'}>
+                    <MoveUpRight size={35} color='white' />
+                  </Link>
+                </div>
               </div>
-            </div>
+            </Zoom>
 
-            <div>
-              <div className={styles.separator} />
-              <div className={styles.header}>
-                <p>03.</p>
-                <h2>Landing <br />
-                  Pages
-                </h2>
-              </div>
+            <Zoom delay={500}>
+              <div>
+                <div className={styles.separator} />
+                <div className={styles.header}>
+                  <p>03.</p>
+                  <h2>Landing <br />
+                    Pages
+                  </h2>
+                </div>
 
-              <div className={styles.servicesLink}>
-                <p>Explore</p>
-                <Link href={'/'}>
-                  <MoveUpRight size={35} color='white' />
-                </Link>
+                <div className={styles.servicesLink}>
+                  <p>Explore</p>
+                  <Link href={'/'}>
+                    <MoveUpRight size={35} color='white' />
+                  </Link>
+                </div>
               </div>
-            </div>
+            </Zoom>
           </div>
         </div>
       </Container>

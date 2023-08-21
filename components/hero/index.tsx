@@ -9,6 +9,7 @@ import Container from '@/components/ui/container';
 
 import styles from './style.module.scss'
 import Link from 'next/link';
+import { Bounce } from 'react-awesome-reveal';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -46,12 +47,16 @@ const Hero = () => {
             <p>Oi! Eu sou um desenvolvedor Frontend - Meu objetivo é criar aplicativos web escaláveis e seguros.</p>
 
             <div className={styles.buttons}>
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
-                <button className={styles.talk}>Vamos Conversar <span><Send size={25} /></span></button>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
-                <button className={styles.document}>Currículo <span><Download /></span></button>
-              </motion.div>
+              <Bounce>
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
+                  <button className={styles.talk}>Vamos Conversar <span><Send size={25} /></span></button>
+                </motion.div>
+              </Bounce>
+              <Bounce delay={500}>
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} >
+                  <button className={styles.document}>Currículo <span><Download /></span></button>
+                </motion.div>
+              </Bounce>
             </div>
           </div>
 

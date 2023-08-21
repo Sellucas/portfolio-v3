@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
+import Magnetic from '@/components/ui/magnetic';
 import { menuSlide } from '../anim';
 
 import styles from './style.module.scss';
@@ -43,7 +44,13 @@ const Nav = () => {
             </div>
             {
               navItems.map((data, index) => {
-                return <Link key={index} data={{ ...data, index }} isActive={selectedIndicator == data.href} setSelectedIndicator={setSelectedIndicator}></Link>
+                return (
+                  <Magnetic key={index}>
+                    <Link data={{ ...data, index }}
+                      isActive={selectedIndicator == data.href}
+                      setSelectedIndicator={setSelectedIndicator}></Link>
+                  </Magnetic>
+                )
               })
             }
           </div>

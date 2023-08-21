@@ -1,17 +1,18 @@
 "use client"
 
 import { Satisfy } from 'next/font/google'
-import { PlayCircle, Send } from 'lucide-react'
+import { PlayCircle } from 'lucide-react'
 import Marquee from "react-fast-marquee";
 import Image from 'next/image'
 import { motion } from "framer-motion";
+import { Zoom } from "react-awesome-reveal";
+import ReactCurvedText from 'react-curved-text';
+import Link from 'next/link';
 
 import Container from '@/components/ui/container'
 
 import styles from './style.module.scss'
-import Link from 'next/link';
 import Magnetic from '../ui/magnetic';
-import ReactCurvedText from 'react-curved-text';
 
 const font = Satisfy({
   subsets: ['latin'],
@@ -20,7 +21,7 @@ const font = Satisfy({
 
 const About = () => {
   return (
-    <section className={styles.main}>
+    <section className={styles.main} id='sobre'>
       <Container>
         <div className={styles.grid}>
           <div className={styles.description}>
@@ -91,25 +92,31 @@ const About = () => {
           </div>
 
           <div className={styles.ability}>
-            <div className={styles.individualAbility}>
-              <div className={styles.circle}>01.</div>
-              <h2>Análise</h2>
-              <p>Compreender as exigências dos clientes e reconhecer possibilidades de fornecer soluções aprimoradas.</p>
-            </div>
+            <Zoom>
+              <div className={styles.individualAbility}>
+                <div className={styles.circle}>01.</div>
+                <h2>Análise</h2>
+                <p>Compreender as exigências dos clientes e reconhecer possibilidades de fornecer soluções aprimoradas.</p>
+              </div>
+            </Zoom>
 
-            <div className={styles.individualAbility}>
-              <div className={styles.separator} />
-              <div className={styles.circle}>02.</div>
-              <h2>Desenvolvimento</h2>
-              <p>Transformar ideias em aplicações funcionais e eficiente, por meio de tecnologias de última geração.</p>
-            </div>
+            <Zoom delay={250}>
+              <div className={styles.individualAbility}>
+                <div className={styles.separator} />
+                <div className={styles.circle}>02.</div>
+                <h2>Desenvolvimento</h2>
+                <p>Transformar ideias em aplicações funcionais e eficiente, por meio de tecnologias de última geração.</p>
+              </div>
+            </Zoom>
 
-            <div className={styles.individualAbility}>
-              <div className={styles.separator} />
-              <div className={styles.circle}>03.</div>
-              <h2>Testes</h2>
-              <p>Assegurar a excelência e consistência do software por meio de testes abrangentes e aprimoramentos contínuos.</p>
-            </div>
+            <Zoom delay={500}>
+              <div className={styles.individualAbility}>
+                <div className={styles.separator} />
+                <div className={styles.circle}>03.</div>
+                <h2>Testes</h2>
+                <p>Assegurar a excelência e consistência do software por meio de testes abrangentes e aprimoramentos contínuos.</p>
+              </div>
+            </Zoom>
           </div>
         </div>
       </Container>

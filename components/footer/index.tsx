@@ -2,16 +2,17 @@
 
 import Marquee from 'react-fast-marquee'
 import { ArrowRightCircle, Send } from 'lucide-react'
+import { Bounce, JackInTheBox } from 'react-awesome-reveal'
+import Link from 'next/link'
 
 import Magnetic from '@/components/ui/magnetic'
 import Container from '@/components/ui/container'
 
 import styles from './style.module.scss'
-import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id='contato'>
       <>
         <div className={styles.pattern} />
         <div className={styles.banner} />
@@ -34,16 +35,20 @@ const Footer = () => {
       <Container>
         <div className={styles.container}>
           <div>
-            <h1>
-              DANDO <span className={styles.vida}>VIDA</span> À <br />
-              PROJETOS COM <br />
-              ESTRATÉGIA <span className={styles.e}>&</span> <br />
-              SEGURANÇA<span className={styles.dot}>.</span>
-            </h1>
+            <JackInTheBox>
+              <h1>
+                DANDO <span className={styles.vida}>VIDA</span> À <br />
+                PROJETOS COM <br />
+                ESTRATÉGIA <span className={styles.e}>&</span> <br />
+                SEGURANÇA<span className={styles.dot}>.</span>
+              </h1>
+            </JackInTheBox>
 
-            <Magnetic>
-              <Link className={styles.hireme} href={"/"}>Contratar <ArrowRightCircle size={60} strokeWidth={1} /></Link>
-            </Magnetic>
+            <Bounce>
+              <Magnetic>
+                <Link className={styles.hireme} href={"/"}>Contratar <ArrowRightCircle size={60} strokeWidth={1} /></Link>
+              </Magnetic>
+            </Bounce>
           </div>
         </div>
       </Container>

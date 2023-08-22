@@ -1,17 +1,18 @@
-@import '@/styles/variables';
+@import "@/styles/variables";
 
 .main {
+  margin: auto;
   width: 100%;
-  min-height: 100vh;
+  min-height: min-content;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 64%,
+    rgba(220, 229, 239, 1) 100%
+  );
   background-attachment: fixed;
-  opacity: 1;
-  background-image: radial-gradient(
-      $black 0.7000000000000001px,
-      transparent 0.7000000000000001px
-    ),
-    radial-gradient($black 0.7000000000000001px, #ffffff 0.7000000000000001px);
-  background-size: 28px 28px;
-  background-position: 0 0, 14px 14px;
+  background-size: cover;
+  padding-bottom: 1rem;
 
   .logo {
     text-decoration: none;

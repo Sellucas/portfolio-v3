@@ -54,7 +54,7 @@ const Service = () => {
           </div>
 
           <div className={styles.services}>
-            <Zoom>
+            <Zoom cascade>
               <div>
                 <div className={styles.separator} />
                 <div className={styles.header}>
@@ -71,9 +71,7 @@ const Service = () => {
                   </Link>
                 </div>
               </div>
-            </Zoom>
 
-            <Zoom delay={250}>
               <div>
                 <div className={styles.separator} />
                 <div className={styles.header}>
@@ -90,9 +88,7 @@ const Service = () => {
                   </Link>
                 </div>
               </div>
-            </Zoom>
 
-            <Zoom delay={500}>
               <div>
                 <div className={styles.separator} />
                 <div className={styles.header}>

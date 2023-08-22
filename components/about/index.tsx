@@ -80,24 +80,20 @@ const About = () => {
           </div>
 
           <div className={styles.ability}>
-            <Zoom>
+            <Zoom cascade>
               <div className={styles.individualAbility}>
                 <div className={styles.circle}>01.</div>
                 <h2>Análise</h2>
                 <p>Compreender as exigências dos clientes e reconhecer possibilidades de fornecer soluções aprimoradas.</p>
               </div>
-            </Zoom>
 
-            <Zoom delay={250}>
               <div className={styles.individualAbility}>
                 <div className={styles.separator} />
                 <div className={styles.circle}>02.</div>
                 <h2>Desenvolvimento</h2>
                 <p>Transformar ideias em aplicações funcionais e eficiente, por meio de tecnologias de última geração.</p>
               </div>
-            </Zoom>
 
-            <Zoom delay={500}>
               <div className={styles.individualAbility}>
                 <div className={styles.separator} />
                 <div className={styles.circle}>03.</div>

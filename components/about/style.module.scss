@@ -2,7 +2,15 @@
 
 .main {
   width: 100%;
-  min-height: 100vh;
+  min-height: min-content;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 64%,
+    rgba(220, 229, 239, 1) 100%
+  );
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .grid {
@@ -99,8 +107,6 @@
 }
 
 .servicesLink {
-  margin-top: 2.5rem;
-  margin-left: 6.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

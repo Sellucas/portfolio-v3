@@ -66,7 +66,7 @@ const Service = () => {
 
                 <div className={styles.servicesLink}>
                   <p>Explore</p>
-                  <Link href={'/'}>
+                  <Link href={'https://github.com/Sellucas'} target='_blank'>
                     <MoveUpRight size={35} color='white' />
                   </Link>
                 </div>
@@ -83,7 +83,7 @@ const Service = () => {
 
                 <div className={styles.servicesLink}>
                   <p>Explore</p>
-                  <Link href={'/'}>
+                  <Link href={'https://github.com/Sellucas'} target='_blank'>
                     <MoveUpRight size={35} color='white' />
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ const Service = () => {
 
                 <div className={styles.servicesLink}>
                   <p>Explore</p>
-                  <Link href={'/'}>
+                  <Link href={'https://github.com/Sellucas'} target='_blank'>
                     <MoveUpRight size={35} color='white' />
                   </Link>
                 </div>

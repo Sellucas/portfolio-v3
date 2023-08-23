@@ -55,7 +55,7 @@ const Projects = () => {
           </div>
 
           <div className={styles.project}>
-            <Zoom>
+            <Zoom cascade>
               <motion.div whileHover={{ scale: 1.1 }} >
                 <div>
                   <div className={styles.separator} />
@@ -69,13 +69,11 @@ const Projects = () => {
                   </div>
                   <p>Fullstack - Web app</p>
                   <div className={styles.projectFeatured}>
-                    <Image src={"/empty.jpg"} alt='' fill />
+                    <Image src={"/deostore-port.jpg"} alt='Deo Store' fill />
                   </div>
                 </div>
               </motion.div>
-            </Zoom>
 
-            <Zoom delay={250}>
               <motion.div whileHover={{ scale: 1.1 }} >
                 <div className={styles.project2}>
                   <div className={styles.separator} />
@@ -89,13 +87,11 @@ const Projects = () => {
                   </div>
                   <p>Front-end</p>
                   <div className={styles.projectFeatured}>
-                    <Image src={"/empty.jpg"} alt='' fill />
+                    <Image src={"/cardflex-port.jpg"} alt='CardFlex' fill />
                   </div>
                 </div>
               </motion.div>
-            </Zoom>
 
-            <Zoom delay={500}>
               <motion.div whileHover={{ scale: 1.1 }} >
                 <div className={styles.project3}>
                   <div className={styles.separator} />
@@ -109,7 +105,7 @@ const Projects = () => {
                   </div>
                   <p>Fullstack - Web app</p>
                   <div className={styles.projectFeatured}>
-                    <Image src={"/empty.jpg"} alt='' fill />
+                    <Image src={"/empty.jpg"} alt='CluedUp' fill />
                   </div>
                 </div>
               </motion.div>

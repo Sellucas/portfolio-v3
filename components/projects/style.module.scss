@@ -172,6 +172,8 @@
 
   img {
     object-fit: cover;
+    box-shadow: 3px 3px 65px -30px $black;
+    border-radius: 10px;
   }
 }
 
